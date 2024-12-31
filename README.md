@@ -23,14 +23,14 @@ Setup:
 5. Add extension=mongodb in php.ini located in C:\xampp\php
 6. Install Burp Suite Community Edition
 7. Run the database create through localhost\DMS-Assignment-NoSQL-Injection\DatabaseCreate.php (Alternatively, files can be navigated through localhost\\DMS-Assignment-NoSQL-Injection)
-8. For performing injection,
-   a. Open Burp Suite
-   b. Navigate to proxy and open browser
-   c. Open login.php
-   d. Turn intercept on and type random username and password followed by submitting the form
-   e. Replace the last line of the prompt with "name[$ne]=e&pwd[$ne]=e"
-   f. Click forward
-   g. Access is granted
-9. To attempt on extra defense login page,
-   a. Same as above
-   b. Access is not granted
+8. **For performing injection,**
+9. Open Burp Suite
+10. Navigate to proxy and open browser
+11. Open login.php
+12. Turn intercept on and type random username and password followed by submitting the form
+13. Replace the last line of the prompt with "name[$ne]=e&pwd[$ne]=e"
+14. Click forward
+15. Access is granted
+16. **To attempt on extra defense login page,**
+17. Open loginSanitized.php and perform steps same as above
+18. Access is not granted
